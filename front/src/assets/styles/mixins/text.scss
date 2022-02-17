@@ -1,0 +1,9 @@
+@mixin text-bold() {
+  font-weight: 700;
+  color: $color-dark-shade-75;
+}
+
+@mixin text() {
+  font-weight: 400;
+  color: $color-dark-shade-50;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap");
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.summary {
+  &__container {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+}
+
+.debt-list {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+  }
+
+  &__item {
+    display: block;
+    width: auto;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+}
+
+.test-list {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+  }
+
+  &__item {
+    display: block;
+    width: auto;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+}
+
+.item {
+  display: grid;
+  max-width: 450px;
+  justify-items: center;
+  padding: 10px;
+
+  &__title {
+    padding: 5px 0 10px;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: calc(24px + 12 * (100vw / 1400));
+    font-weight: 600;
+  }
+}
+
+.title {
+  font-size: calc(24px + 12 * (100vw / 1920));
+  font-weight: 700;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.expires-of-test,
+.expires-of-payment {
+  max-width: 100%;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  border-collapse: collapse;
+
+  &__crm-link {
+    text-decoration: none;
+    color: #2740c0;
+  }
+
+  & > :not(:first-child) {
+    border-top: 2px solid #2a2a2a;
+  }
+
+  & > thead > tr > th {
+    border: 2px solid #2a2a2a;
+  }
+
+  & > tbody > tr > td {
+    padding: 5px 0;
+    border: 1px solid grey;
+  }
+
+  & > tbody > tr {
+    text-align: center;
+  }
+}
