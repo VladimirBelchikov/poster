@@ -1,0 +1,11 @@
+mixin getCallForm(name, surname, phone)
+  section.get-call
+    .get-call__container
+      h3.get-call__title.title.text Оставьте контактные данные, и наш менеджер ответит на все вопросы
+      form.get-call__form(onsubmit="console.log(name?.value, surname?.value, phone.value);return false")
+        if name
+          input.get-call__input.text#name(type='text', name='name', placeholder='Ваше имя')
+        if surname
+          input.get-call__input.text#surname(type='text', name='surname', placeholder='Ваша фамилия')
+        input.get-call__input.text#phone(type='text', name='phone', required, placeholder='+7 (999) 999-99-99')
+        input.get-call__input.get-call__input-button.button(type='submit', value='Отправить')

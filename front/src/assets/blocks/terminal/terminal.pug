@@ -1,0 +1,9 @@
+mixin hardware-terminal-device(title,description,img,icon,alt)
+  .device
+    img.device__img(src=require(`../assets/images/devices/${img}`) alt=alt)
+    .device__description
+      img(src=require(`../assets/images/brands/${icon}`))
+      .device__text
+        p.text= title
+        span.text= description
+

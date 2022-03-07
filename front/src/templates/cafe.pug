@@ -1,6 +1,10 @@
-head
-    include ../assets/blocks/_head
+extends ../assets/layout/layout
 
-body
-    .wrapper
-        include ../assets/includes/page-header/header
+prepend headConfig
+  - const pageTitle = 'Кафе';
+  - const description = '';
+  - const keywords = '';
+  - const mainClass = 'cafe';
+
+append content
+  .asdfasdf asdfasd

@@ -1,7 +1,6 @@
-import {header} from "./assets/includes/page-header/header";
+import {header} from "./assets/includes/header/header";
+
 header();
 
 import './assets/styles/main.scss';
-
-import './assets/includes/page-header/header.scss';
-import './assets/styles/index.scss';
+import './assets/blocks/getCallForm/getCallForm';

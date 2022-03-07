@@ -1,0 +1,95 @@
+extends ../assets/layout/layout
+
+include ../assets/blocks/terminal/terminal
+include ../assets/blocks/supportedHardwareList/supportedHardwareList
+include ../assets/blocks/getCallForm/getCallForm
+
+
+prepend headConfig
+  - const pageTitle = 'Оборудование';
+  - const description = 'Оборудование';
+  - const keywords = 'Оборудование';
+  - const mainClass = 'hardware';
+
+
+
+block content
+  h1.hardware__title.title.text Оборудование для работы с Poster
+  p.hardware__subtitle.subtitle.text
+    | Всё необходимое оборудование для полноценной работы вашего заведения с Poster.
+    | Если у вас уже есть своё оборудование, просто позвоните нам, и мы всё решим!
+  section.kits
+    .kits__container
+      include ../assets/blocks/kits/kits
+  section.catalog
+    .catalog__container
+      include ../assets/blocks/catalog/catalog
+  section.supported-hardware
+    .supported-hardware__container
+      h2.supported-hardware__title.title.text Список поддерживаемого оборудования
+      p.supported-hardware__subtitle.subtitle.text Для принятия заказа необходим планшет или компьютер
+      p.supported-hardware__description.text
+        | Poster стабильно работает на планшетах с платформой iOS, Android, на ноутбуках, компьютерах,
+        | моноблоках, POS-терминалах с платформой Windows и macOS. Минимальные требования к оборудованию:
+      .terminal
+        +hardware-terminal-device(
+          'Apple iPad Air 2, Mini 4, Pro и выше',
+          'Версия iOS 13 и выше',
+          'ipad.png',
+          'apple.svg',
+          'терминал продаж Poster на ipad'
+        )
+        +hardware-terminal-device(
+          'MacBook с 4 ГБ ОЗУ',
+          'Mac OS X 10.12+',
+          'macbook.png',
+          'apple.svg',
+          'терминал продаж Poster на macbook'
+        )
+        +hardware-terminal-device(
+          'Android планшет с 2 ГБ+ ОЗУ, 7″ — 1024×600',
+          'Версия Android 5.0 и выше',
+          'android-tablet.png',
+          'android.svg',
+          'терминал продаж Poster на android'
+        )
+        +hardware-terminal-device(
+          'ПК с 4 ГБ+ ОЗУ, 1.8 ГГц ЦПУ',
+          'Версия Windows 8.1 и выше',
+          'notebook.png',
+          'windows.svg',
+          'терминал продаж Poster на windows'
+        )
+
+      .thermal-printer
+        +supportedHardwareList(
+          'Термальные принтеры для печати бегунков на кухню',
+          'Поддерживаются все чековые принтеры, которые работают по протоколу ESC/POS и подключаются через ' +
+          'Ethernet-интерфейс, но мы гарантируем работу только перечисленных выше моделей. Если вашего принтера ' +
+          'нет в списке, напишите нам, и команда поддержки проверит его характеристики.',
+          'Epson TM-T20II Ethernet',
+          'Bixolon SRP-350III Ethernet',
+          'Star TSP-100 Ethernet, TSP-143 Ethernet, mC-Print3',
+          'Sam4s GIANT-100 (Ellix 50DB)'
+        )
+      .fiscal-recorder
+        +supportedHardwareList(
+          'Фискальные регистраторы для печати фискальных чеков',
+          'Также возможна работа с онлайн-кассами в параллельном режиме. Подробности уточняйте у менеджера.',
+          'Атол: 11Ф, 15Ф, 20Ф, 22Ф, 25Ф, 27Ф, 30Ф, 50Ф, 55Ф, 77Ф',
+          'Дримкас (работает только с Windows): Viki Print 57, Viki Print 57 Plus, Viki Print 80 Plus',
+          'Штрих: М-01Ф, ON-LINE, М-02Ф'
+        )
+      .acquiring
+        +supportedHardwareList(
+          'Рекомендуемые модели терминалов для банков',
+          null,
+          'Тинькофф, Точка, Русский Стандарт, Райффайзен Банк, ВТБ Банк, Альфа-Банк:',
+          'Verifone от inPas: VX520, VX820, V200t',
+          'PAX от inPas: S80, S300',
+          'Сбербанк:',
+          'PAX от inPas: SP30, S300'
+        )
+  +getCallForm(true,true,true)
+
+

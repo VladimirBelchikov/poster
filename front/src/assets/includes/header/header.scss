@@ -104,8 +104,6 @@
   }
 
   &__item {
-
-
     & > a {
       padding: 19px;
       display: block;
@@ -222,6 +220,7 @@
 
   // .header__buttons
   &__buttons {
+    //flex: 1 1 auto;
     justify-content: flex-end;
     display: flex;
     gap: 10px;
@@ -246,6 +245,11 @@
     background-color: #59be2e;
     border-radius: 3px;
     border: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #3dd23d;
+    }
 
     @media (max-width: 1024px) {
       font-size: 1.125rem;
@@ -263,6 +267,11 @@
     color: #59be2e;
     padding: 12px 30px;
     text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #3dd23d;
+    }
 
     @media (max-width: 1130px) {
       font-size: 1.125rem;
@@ -290,6 +299,10 @@
     text-decoration: none;
 
     transition: 0.3s;
+
+    &:hover {
+      background-color: #0f94fb;
+    }
 
     & > span {
       padding: 0 5px;

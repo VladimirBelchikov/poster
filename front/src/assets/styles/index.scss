@@ -20,10 +20,6 @@
   }
 }
 
-.main {
-  padding-top: 60px;
-}
-
 .hero {
   ::before {
     box-sizing: border-box !important;
@@ -35,7 +31,6 @@
 
   box-sizing: border-box !important;
   background: radial-gradient(45.29% 222.95% at 54.71% 50%, rgb(57 173 189 / 31%) 0%, rgb(146 171 200 / 51%) 100%);
-  max-width: 100vw;
   justify-content: space-between;
 
   &__container {
@@ -221,15 +216,24 @@
   background: radial-gradient(45.29% 222.95% at 54.71% 50%, rgb(57 173 189 / 31%) 0%, rgb(146 171 200 / 51%) 100%);
 
   &__subtitle {
+    font-weight: 700;
+    font-size: 2rem;
+    @media (max-width: 1400px) {
+      font-size: calc(1.2rem + 1vw);
+    }
+    @media (max-width: 960px) {
+      font-size: calc(1.2rem + 1vw);
+    }
+    @media (max-width: 960px) {
+      max-width: 80%;
+      font-size: calc(0.8rem + 1.5vw);
+      text-align: center;
+    }
+
     span {
-      color: red;
+      color: #ff0000;
     }
   }
-}
-
-.subtitle {
-  margin-bottom: 20px;
-  font-size: 2.25rem;
 }
 
 $animationSpeed: 40s;
@@ -245,32 +249,31 @@ $animationSpeed: 40s;
   }
 }
 
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  height: 150px;
-}
-
 // Styling
 .slider {
   display: flex;
   align-items: center;
   height: 150px;
-  margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1920px;
+  max-width: 100vw;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 150px;
+  }
 
   &::before,
   &::after {
     @include white-gradient;
 
     content: "";
-    height: 150px;
+    height: 100%;
     position: absolute;
-    width: 200px;
+    width: 15%;
     z-index: 2;
   }
 
@@ -285,12 +288,12 @@ $animationSpeed: 40s;
     top: 0;
   }
 
-  .slide-track {
+  .slider__track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
     height: 100px;
     align-items: center;
-    width: calc(250px * 14);
+    width: 235vw;
   }
 
   .slide {
@@ -341,10 +344,6 @@ $animationSpeed: 40s;
       font-size: calc(0.5rem + 1vw);
     }
   }
-
-  .subtitle {
-    font-size: calc(1.2rem + 1vw);
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -381,9 +380,6 @@ $animationSpeed: 40s;
     }
   }
 
-  .subtitle {
-    font-size: calc(1.2rem + 1vw);
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -444,12 +440,5 @@ $animationSpeed: 40s;
     &__employee-app-text {
       text-align: center;
     }
-  }
-
-  .subtitle {
-    font-weight: 700;
-    max-width: 80%;
-    font-size: calc(0.8rem + 1.5vw);
-    text-align: center;
   }
 }

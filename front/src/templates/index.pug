@@ -1,104 +1,103 @@
-head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    title Poster Siberia
-body
-    .wrapper
-        include ../assets/includes/page-header/header
+extends ../assets/layout/layout
 
-        main.main
-            section.hero
-                .hero__container
-                    .hero__main-container
-                        h1.hero__title.text Poster система автоматизации для вашего кафе и ресторана
-                        p.hero__description.text
-                            | Сайт доставки, база гостей, статистика, продажи, управление
-                            | финансами и всё это в облаке.
-                            br
-                            |  От 1520 руб. в месяц
-                        .hero__preview-mobile
-                            img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/a7624bdskes8da9/ipad-pro-ru-rub.png?dl=0' alt='Poster баннер')
-                        .hero__registration-block
-                            a.hero__registration-link(href='https://joinposter.com/signup?ref=kem' rel='nofollow')
-                                button.hero__registration-button.text Попробовать бесплатно
-                            span.hero__registration-text.text Подключитесь к Poster за 1 час и тестируйте бесплатно 2 недели
-                        .hero__employee-app-block
-                            a.hero__app-store-link(href='https://itunes.apple.com/us/app/poster/id691098784' rel='nofollow')
-                                img.hero__app-store-img(src='https://static.tildacdn.com/tild6430-6330-4037-b763-383661623363/appstore.svg' alt='poster-app-store')
-                            a.hero__google-play-link(href='https://play.google.com/store/apps/details?id=com.joinposter' rel='nofollow')
-                                img.hero__google-play-img(src='https://static.tildacdn.com/tild6265-3562-4532-b532-333638303934/playmarket.svg' alt='poster-google-play')
-                            p.hero__employee-app-text.text Приложение для сотрудников
-                    .hero__preview-container
-                        .hero__preview
-                            img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/a7624bdskes8da9/ipad-pro-ru-rub.png?dl=0' alt='Poster баннер')
-                            span.hero__preview-text.text Удобное рабочее место
-                        .hero__preview
-                            img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/s0gh8rolam9kfmn/poster%20admin.png?dl=0' alt='Poster баннер')
-                            span.hero__preview-text.text Управление из любой точки мира
-                        .hero__preview
-                            img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/ispl4un3xwxahg3/poster%20boss.png?dl=0' alt='Poster баннер')
-                            span.hero__preview-text.text Приложение для владельца
-            section.our-clients
-                h2.our-clients__subtitle.subtitle.text
-                    | > 20000 активных заведений используют Poster
-                    span  ❤
-                .slider-container
-                    .slider
-                        .slide-track
-                            .slide
-                                img(src='https://static.tildacdn.com/tild6235-3562-4065-b063-373765623434/libuTuXaTw0.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6162-3730-4761-b236-386139663833/-/resize/200x/-/format/webp/17973661_13548419479.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3233-3163-4461-b062-633638316230/-/resize/200x/-/format/webp/24274312_17272424998.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3262-6236-4530-a262-356462313438/-/resize/200x/-/format/webp/23507231_14685695260.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6536-3332-4161-b138-363531663964/-/resize/200x/-/format/webp/29089017_15714770830.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://static.tildacdn.com/tild3537-3361-4638-a537-346137393863/29400917_19129018690.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='	https://thumb.tildacdn.com/tild3430-6237-4462-a263-636531356131/-/resize/200x/-/format/webp/29739928_21448006490.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6162-3631-4766-a264-333736336233/-/resize/200x/-/format/webp/41425660_16679359633.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3337-6632-4562-a232-633530363930/-/resize/200x/-/format/webp/50119039_23906856035.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3862-3861-4363-a264-396562336638/-/resize/200x/-/format/webp/53423920_39376052143.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3130-6361-4438-b739-306461303865/-/resize/200x/-/format/webp/53439425_62186119495.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6434-6264-4736-b232-616333643735/-/resize/200x/-/format/webp/53552049_33723506690.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3836-6438-4339-b831-656364663266/-/resize/200x/-/format/webp/118684691_8183389356.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3933-3635-4835-b931-373765323835/-/format/webp/cOUFxe7j_iI.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://static.tildacdn.com/tild6235-3562-4065-b063-373765623434/libuTuXaTw0.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6162-3730-4761-b236-386139663833/-/resize/200x/-/format/webp/17973661_13548419479.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3233-3163-4461-b062-633638316230/-/resize/200x/-/format/webp/24274312_17272424998.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3262-6236-4530-a262-356462313438/-/resize/200x/-/format/webp/23507231_14685695260.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6536-3332-4161-b138-363531663964/-/resize/200x/-/format/webp/29089017_15714770830.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://static.tildacdn.com/tild3537-3361-4638-a537-346137393863/29400917_19129018690.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='	https://thumb.tildacdn.com/tild3430-6237-4462-a263-636531356131/-/resize/200x/-/format/webp/29739928_21448006490.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6162-3631-4766-a264-333736336233/-/resize/200x/-/format/webp/41425660_16679359633.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3337-6632-4562-a232-633530363930/-/resize/200x/-/format/webp/50119039_23906856035.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3862-3861-4363-a264-396562336638/-/resize/200x/-/format/webp/53423920_39376052143.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3130-6361-4438-b739-306461303865/-/resize/200x/-/format/webp/53439425_62186119495.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild6434-6264-4736-b232-616333643735/-/resize/200x/-/format/webp/53552049_33723506690.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3836-6438-4339-b831-656364663266/-/resize/200x/-/format/webp/118684691_8183389356.png' height='100' width='100' alt='')
-                            .slide
-                                img(src='https://thumb.tildacdn.com/tild3933-3635-4835-b931-373765323835/-/format/webp/cOUFxe7j_iI.png' height='100' width='100' alt='')
+prepend headConfig
+  - const pageTitle = 'Poster Siberia';
+  - const description = '';
+  - const keywords = '';
+  - const mainClass = 'index';
+
+
+append content
+  section.hero
+    .hero__container
+      .hero__main-container
+        h1.hero__title.text Poster система автоматизации для вашего кафе и ресторана
+        p.hero__description.text
+          | Сайт доставки, база гостей, статистика, продажи, управление
+          | финансами и всё это в облаке.
+          br
+          |  От 1520 руб. в месяц
+        .hero__preview-mobile
+          img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/a7624bdskes8da9/ipad-pro-ru-rub.png?dl=0' alt='Poster баннер')
+        .hero__registration-block
+          a.hero__registration-link(href='https://joinposter.com/signup?ref=kem' rel='nofollow')
+            button.hero__registration-button.text Попробовать бесплатно
+          span.hero__registration-text.text Подключитесь к Poster за 1 час и тестируйте бесплатно 2 недели
+        .hero__employee-app-block
+          a.hero__app-store-link(href='https://itunes.apple.com/us/app/poster/id691098784' rel='nofollow')
+            img.hero__app-store-img(src='https://static.tildacdn.com/tild6430-6330-4037-b763-383661623363/appstore.svg' alt='poster-app-store')
+          a.hero__google-play-link(href='https://play.google.com/store/apps/details?id=com.joinposter' rel='nofollow')
+            img.hero__google-play-img(src='https://static.tildacdn.com/tild6265-3562-4532-b532-333638303934/playmarket.svg' alt='poster-google-play')
+          p.hero__employee-app-text.text Приложение для сотрудников
+      .hero__preview-container
+        .hero__preview
+          img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/a7624bdskes8da9/ipad-pro-ru-rub.png?dl=0' alt='Poster баннер')
+          span.hero__preview-text.text Удобное рабочее место
+        .hero__preview
+          img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/s0gh8rolam9kfmn/poster%20admin.png?dl=0' alt='Poster баннер')
+          span.hero__preview-text.text Управление из любой точки мира
+        .hero__preview
+          img.hero__preview-img(src='https://www.dl.dropboxusercontent.com/s/ispl4un3xwxahg3/poster%20boss.png?dl=0' alt='Poster баннер')
+          span.hero__preview-text.text Приложение для владельца
+  section.our-clients
+    h2.our-clients__subtitle.subtitle.text > 20000 активных заведений используют Poster
+      span  ❤
+    .slider
+      .slider__container
+        .slider__track
+          .slide
+            img(src='https://static.tildacdn.com/tild6235-3562-4065-b063-373765623434/libuTuXaTw0.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6162-3730-4761-b236-386139663833/-/resize/200x/-/format/webp/17973661_13548419479.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3233-3163-4461-b062-633638316230/-/resize/200x/-/format/webp/24274312_17272424998.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3262-6236-4530-a262-356462313438/-/resize/200x/-/format/webp/23507231_14685695260.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6536-3332-4161-b138-363531663964/-/resize/200x/-/format/webp/29089017_15714770830.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://static.tildacdn.com/tild3537-3361-4638-a537-346137393863/29400917_19129018690.png' height='100' width='100' alt='')
+          .slide
+            img(src='	https://thumb.tildacdn.com/tild3430-6237-4462-a263-636531356131/-/resize/200x/-/format/webp/29739928_21448006490.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6162-3631-4766-a264-333736336233/-/resize/200x/-/format/webp/41425660_16679359633.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3337-6632-4562-a232-633530363930/-/resize/200x/-/format/webp/50119039_23906856035.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3862-3861-4363-a264-396562336638/-/resize/200x/-/format/webp/53423920_39376052143.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3130-6361-4438-b739-306461303865/-/resize/200x/-/format/webp/53439425_62186119495.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6434-6264-4736-b232-616333643735/-/resize/200x/-/format/webp/53552049_33723506690.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3836-6438-4339-b831-656364663266/-/resize/200x/-/format/webp/118684691_8183389356.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3933-3635-4835-b931-373765323835/-/format/webp/cOUFxe7j_iI.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://static.tildacdn.com/tild6235-3562-4065-b063-373765623434/libuTuXaTw0.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6162-3730-4761-b236-386139663833/-/resize/200x/-/format/webp/17973661_13548419479.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3233-3163-4461-b062-633638316230/-/resize/200x/-/format/webp/24274312_17272424998.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3262-6236-4530-a262-356462313438/-/resize/200x/-/format/webp/23507231_14685695260.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6536-3332-4161-b138-363531663964/-/resize/200x/-/format/webp/29089017_15714770830.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://static.tildacdn.com/tild3537-3361-4638-a537-346137393863/29400917_19129018690.png' height='100' width='100' alt='')
+          .slide
+            img(src='	https://thumb.tildacdn.com/tild3430-6237-4462-a263-636531356131/-/resize/200x/-/format/webp/29739928_21448006490.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6162-3631-4766-a264-333736336233/-/resize/200x/-/format/webp/41425660_16679359633.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3337-6632-4562-a232-633530363930/-/resize/200x/-/format/webp/50119039_23906856035.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3862-3861-4363-a264-396562336638/-/resize/200x/-/format/webp/53423920_39376052143.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3130-6361-4438-b739-306461303865/-/resize/200x/-/format/webp/53439425_62186119495.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild6434-6264-4736-b232-616333643735/-/resize/200x/-/format/webp/53552049_33723506690.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3836-6438-4339-b831-656364663266/-/resize/200x/-/format/webp/118684691_8183389356.png' height='100' width='100' alt='')
+          .slide
+            img(src='https://thumb.tildacdn.com/tild3933-3635-4835-b931-373765323835/-/format/webp/cOUFxe7j_iI.png' height='100' width='100' alt='')

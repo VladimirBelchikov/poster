@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 $font-path: '../fonts/';
 
@@ -6,33 +6,34 @@ $color-green: #5cb85c;
 $color-orange: #f0ad4e;
 $color-blue: #5bc0de;
 
-//@font-face {
-//  font-family: 'Montserrat';
-//  src: url('#{$font-path}Montserrat-Regular.woff') format('woff'),
-//  url('#{$font-path}Montserrat-Regular.ttf') format('truetype'),
-//  url('#{$font-path}Montserrat-Regular.svg') format('svg');
-//  font-style: normal;
-//  font-weight: 400;
-//}
-//
-//@font-face {
-//  font-family: 'Montserrat';
-//  src: url('#{$font-path}Montserrat-Bold.woff') format('woff'),
-//  url('#{$font-path}Montserrat-Bold.ttf') format('truetype'),
-//  url('#{$font-path}Montserrat-Bold.svg') format('svg');
-//  font-style: normal;
-//  font-weight: 700;
-//}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-Regular.svg') format('svg'),
+  url('#{$font-path}Montserrat-Regular.woff') format('woff'),
+  url('#{$font-path}Montserrat-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-Bold.svg') format('svg'),
+  url('#{$font-path}Montserrat-Bold.woff') format('woff'),
+  url('#{$font-path}Montserrat-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
 
 .text {
-  font-family: "Montserrat", sans-serif;
-  color: rgba(55, 53, 68, 1);
+  font-family: 'Montserrat', serif;
+  color: #484848;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   word-break: normal !important;
   word-wrap: normal !important;
   hyphens: none !important;
+  text-decoration: none;
 
   &_green {
     color: $color-green;

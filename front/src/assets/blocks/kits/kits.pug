@@ -1,0 +1,21 @@
+mixin kit(img, title, description, price)
+  .kit
+    img.kit__img(src=require(`../assets/images/kit/${img}`))
+    h2.kit__title.text= title
+    p.kit__description.text= description
+    .kit__price-row
+      span.kit__price.text= price
+      a.kit__button.button.text(href='#pop-up:order') Заказать
+
++kit(
+  'poster-start.png',
+  'Poster Start', 'Samsung Galaxy Tab A7 10.4, ФР Атол 27Ф, фискальный накопитель 15 мес.',
+  '49150 руб.')
++kit(
+  'poster-expert.png',
+  'Poster Expert', 'Ipad 10,2 2021, ФР Атол 27Ф, фискальный накопитель 15 мес., роутер Keenetic 4G',
+  '66500 руб.')
++kit(
+  'poster-station.png',
+  'Poster Station', 'Сенсорный терминал АТОЛ ViVA Smart, ФР Атол 30Ф, фискальный накопитель 15 мес.',
+  '79270 руб.')

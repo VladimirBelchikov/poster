@@ -2,3 +2,12 @@
 @import 'fonts';
 @import 'base';
 @import 'mixins/text';
+
+@import 'hardware';
+@import "index";
+@import "../includes/header/header";
+@import "../includes/footer/footer";
+@import '../blocks/kits/kits';
+@import "../blocks/catalog/catalog";
+@import "../blocks/getCallForm/getCallForm";
+

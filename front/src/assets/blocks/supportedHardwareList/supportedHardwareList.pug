@@ -1,0 +1,6 @@
+mixin supportedHardwareList(subtitle, description, ...items)
+  h3.supported-hardware__subtitle.subtitle.text= subtitle
+  each item in items
+    p.supported-hardware__item.text= item
+  if description
+    p.supported-hardware__description.text= description || null

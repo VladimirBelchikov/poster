@@ -1,0 +1,34 @@
+mixin label(title, ...items)
+  .footer__column
+    h3.footer__column-title.text= title
+    each item in items
+      a.footer__item.text(href= item[1])
+        span.text= item[0]
+.footer
+  .footer__container
+    .footer__top-row
+      +label('Poster Siberia',
+        ['Решения', '/cafe.html'],
+        ['Цены', '/pricing.html'],
+        ['Установка', '/setup.html'],
+        ['Вакансии', '/vacancy.html'],
+        ['Партнёрам', '/partner.html'],
+      )
+      +label('Политика пользования',
+        ['Соглашение', '/user-agreement.html'],
+        ['Контакты', '/contacts.html'],
+        ['Использование cookies', '/cookie-policy.html'],
+        ['Политика конфиденциальности', '/privacy-policy.html'],
+      )
+      +label('Наши контакты',
+        ['+7(923) 480-44-66', 'tel:+79234804466'],
+        ['company.siberia@joinposter.com', 'mailto:company.siberia@joinposter.com']
+      )
+      +label('Аналитика в телефоне',
+        ['iOS', 'https://apps.apple.com/ru/app/poster-boss-sales-reports/id1088181327'],
+        ['Android', 'https://play.google.com/store/apps/details?id=com.poster_manage.app']
+      )
+    .footer__bottom-row
+      p © Все права защищены. Официальный дилер Poster POS в России.
+      p Телефон: +7(923)480-44-66
+      p Email: company.siberia@joinposter.com

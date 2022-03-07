@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    block headConfig
+      meta(name='description' content= description || '')
+      meta(name='keywords' content= keywords || '')
+      title= pageTitle || ''
+
+  body
+    .wrapper
+      block header
+        include ../includes/header/header
+
+      main.main(class= mainClass)
+        block content
+
+      block footer
+        include ../includes/footer/footer

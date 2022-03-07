@@ -1,0 +1,16 @@
+mixin catalog-list-item(title,img,link)
+  //.catalog-item
+  .catalog-item(style=`background-image: url(${require(`../assets/images/catalog/${img}`)})`)
+    a.catalog-item__link.text(href=link)
+      h3.catalog-item__title.text=title
+
+//TODO links
+
++catalog-list-item('Фискальные регистраторы','fiscal.jpg','/hardware/fiscal-data-recorders.html')
++catalog-list-item('Принтеры чеков','printer.jpg','/hardware/printers.html')
++catalog-list-item('Денежные ящики','cashbox.jpg','/hardware/cashboxes.html')
++catalog-list-item('Планшеты','tablet.jpg','/hardware/tablets.html')
++catalog-list-item('Роутеры','router.jpg','/hardware/routers.html')
++catalog-list-item('ЭЦП, ЕГАИС, ОФД','services.jpg','/hardware/services.html')
++catalog-list-item('Весы','scales.jpg','/hardware/libras.html')
++catalog-list-item('Сканеры','scanner.jpg','/hardware/scanners.html')
